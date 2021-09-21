@@ -5,7 +5,7 @@ services:
 before_install:
   - docker build -t karkisunil1200/docker-react -f Dockerfile.dev .
 
-scripts:
+script:
   - docker run karkisunil1200/docker-react npm run test -- --coverage
 
 deploy:
