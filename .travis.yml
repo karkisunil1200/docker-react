@@ -17,7 +17,7 @@ deploy:
   region: "us-east-2"
   app: "docker-react"
   env: "Dockerreact-env"
-  bucket_name: "elasticbeanstalk-us-east-2-532929126823"
+  bucket: "elasticbeanstalk-us-east-2-532929126823"
   bucket_path: "docker-react"
   cleanup: true
   on:
