@@ -1,4 +1,6 @@
 language: node_js
+os: linux
+dist: xenial
 node_js:
   - node
 services:
@@ -17,6 +19,7 @@ deploy:
   env: "Dockerreact-env"
   bucket_name: "elasticbeanstalk-us-east-2-532929126823"
   bucket_path: "docker-react"
+  cleanup: true
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
