@@ -9,6 +9,7 @@ scripts:
   - docker run karkisunil1200/docker-react npm run test -- --coverage
 
 deploy:
+  skip_cleanup: true
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "docker-react"
